@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD330 Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Week 1</h1>
+      <h3>WDD 330 portfolio</h3>
+    </header>
+    <main>
+      <ul>
+        <li>
+          <p>Notes from "Doing Stuff with Web Things"</p>
+          <div>
+            <h3>Doing Stuff with Web Things</h3>
+            <p>One thing the I learned as I read this section was that when you want to get the user’s input from any input or 
+              text area tag, you use the special word 'value'.<br><br>
+              For example:<br><br>
+              let namevar = document.getElementById(“name_input”).value;<br><br>
+              <em>You are storing the value in the 'namevar' variable from the user.</em>
+            </p>
+            <p>When you want to show something to a user, 
+              you use a section and the special word ‘innerHTM’.
+              For example:<br><br>
+              document.getElementById(“display”).innerHTML = theinformation<br><br>
+              <em>You are showing the information which is stored in the 'theinformation' variable 
+                to the user. This infomation or data appears in the place where 'display' id is located.</em>
+            </p>   
+          </div>
+        </li>
+        <li>
+          <a href="document.html">Exersise</a>
+        </li>
+        <li><p>Question</p></li>
+        <div><h3>Is localStorage a popular way to persist data in real world applications? 
+          Or is it just a work around when we don't want to deal with sessions, or even an actual database?</h3></div>
+        <p>I think that it is a popular way to persist data because is the base. Now, I don't know how</p>
+      </ul>
+      
+    </main>
+
+
+    <footer>
+      <div class="onefooter">
+        <h3> Nicole C. Rosales </h3>
+        <p><a href="index.html">Portfolio</a></p>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/nicoleandrea.91" target="_blank"><img src="https://cdn.glitch.com/c5c489e1-5222-49b5-b3b2-c93bcb4ee48b%2Ffacebook.png?v=1608121329038" alt="facebook"></a>
+        <a href="https://www.instagram.com/nicolecrosales" target="_blank"><img src="https://cdn.glitch.com/c5c489e1-5222-49b5-b3b2-c93bcb4ee48b%2Finstagram.png?v=1608121385879" alt="instagram"></a>
+        <a href="https://www.linkedin.com/in/nicole-andrea-carrasco-rosales" target="_blank"><img src="https://cdn.glitch.com/c5c489e1-5222-49b5-b3b2-c93bcb4ee48b%2Flinkedin.png?v=1608121323862" alt="linkedin"></a>
+      </div> 
+      <div class="finalfooter">
+        <p><span class="year">&copy;</span> <span class="year" id="currentyear"></span> | Nicole Carrasco Rosales</p> 
+      </div> 
+    </footer>
+    
+    
+    
+      
+    </ul>
+    <script src="js/main.js"></script>
+  </body>
+</html>

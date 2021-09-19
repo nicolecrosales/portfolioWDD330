@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notes Editor|WDD 330</title>
+        <script>
+            function loadNote() {
+                var noteName = document.getElementById('name_input').value;
+                var noteHTML = localStorage.getItem(noteName);
+                document.getElementById('note_editor').value = noteHTML;
+            }
+            function saveNote() {
+                var noteName = document.getElementById('name_input').value;
+                var noteHTML = document.getElementById('note_editor').value;
+                localStorage.setItem(noteName, noteHTML);
+            }
+            function dsiplayNote() {
+                var noteHTML = document.getElementById('note_editor').value;
+                document.getElementById('note_display').innerHTML = noteHTML;
+            }
+        </script>
+        <style>
+            textarea {
+                width:800px;
+                height: 250px;
+                background-color: lightyellow;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>Notes Editor</h1>
+        <!--<label>Story Name:<input id=name_input type="text" name="name_input"></label>-->
+        Story Name:<input id=name_input></input>
+        <section>
+            <button onclick="loadNote()">Find and Edit It</button>
+            <button onclick="saveNote()">Save It</button>
+            <button onclick="displayNote()">Display It</button>
+        </section>
+        <textarea id="note_editor" placeholder="Write a totally awesome story here."></textarea>
+        <section id="note_display"></section>
+
+    </body>
+</html>
